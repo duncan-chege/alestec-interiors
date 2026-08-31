@@ -7,7 +7,7 @@
             <h1 class="text-dark-grey">From <span class="text-brown">Concept</span> to
                 <span class="text-brown">Handover</span>, Flawlessly Delivered
             </h1>
-            <p class="max-w-md text-base md:text-lg leading-relaxed">
+            <p class="text-base md:text-lg">
                 With over 10+ years experience in construction management, we have handled a wide variety of
                 projects with different range and combination of skillsets in the East Africa region and Kenya
                 at large
@@ -25,8 +25,8 @@
 </section>
 
 <!-- Who We Are -->
-<section class="container-custom py-16 md:py-24">
-    <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+<section class="container-custom py-8 md:py-16">
+    <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div>
             <span class="badge border-brown/40 text-brown mb-6">
                 <span class="badge-dot"></span> Who We Are
@@ -38,42 +38,34 @@
             </p>
             <p class="mb-10">We serve corporations, large scale commercial clients and residences</p>
 
-            <div class="flex flex-wrap gap-x-10 gap-y-6">
-                <div class="flex flex-col items-center gap-3 text-center w-24">
-                    <svg class="w-9 h-9 text-brown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 11V7a3 3 0 013-3h8a3 3 0 013 3v4M4 11h16v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5zM4 16v3M20 16v3" />
-                    </svg>
+            <div class="flex flex-wrap gap-x-16 gap-y-6">
+                <div class="flex flex-col items-center gap-3 text-center">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/livingroom-icon.svg" alt="interior design icon" class="w-18 h-18">
                     <span class="text-sm font-semibold text-dark-grey">Interior Design</span>
                 </div>
-                <div class="flex flex-col items-center gap-3 text-center w-24">
-                    <svg class="w-9 h-9 text-brown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 21V6a1 1 0 011-1h6a1 1 0 011 1v15M12 21v-9a1 1 0 011-1h6a1 1 0 011 1v9M4 21h16M7 8h1M7 11h1M7 14h1M7 17h1M15 13h1M15 16h1" />
-                    </svg>
+                <div class="flex flex-col items-center gap-3 text-center">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/building-icon.svg" alt="interior design icon" class="w-18 h-18">
                     <span class="text-sm font-semibold text-dark-grey">Urban Design</span>
                 </div>
-                <div class="flex flex-col items-center gap-3 text-center w-24">
-                    <svg class="w-9 h-9 text-brown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7M5 10v10a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V10" />
-                    </svg>
+                <div class="flex flex-col items-center gap-3 text-center">
+                     <img src="<?php echo get_template_directory_uri();?>/assets/images/house-icon.svg" alt="interior design icon" class="w-18 h-18">
                     <span class="text-sm font-semibold text-dark-grey">Residential Design</span>
                 </div>
             </div>
         </div>
 
-        <div class="relative max-w-md mx-auto md:max-w-none">
-            <div class="relative rounded-t-[160px] overflow-hidden aspect-4/5">
-                <img src="https://placehold.co/600x750/e7e1d0/2f2f2f?text=Showroom" alt="Alestec showroom" loading="lazy"
-                    class="w-full h-full object-cover" />
+        <div class="justify-self-start relative">
+            <div class="relative">
+                <img class="w-full h-full object-cover relative left-10" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-outer-img.png" alt="interior showcase">
             </div>
 
-            <div class="absolute -top-6 right-2 md:-right-4 w-28 h-28 md:w-32 md:h-32 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl">
-                <span class="text-3xl md:text-4xl font-bold leading-none">10</span>
-                <span class="text-[10px] tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
+            <div class="outline -outline-offset-10 outline-white absolute top-0 right-6 w-28 h-28 md:w-44 md:h-44 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl">
+                <span class="text-3xl md:text-6xl font-bold leading-none">10</span>
+                <span class="text-sm tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
             </div>
 
-            <div class="absolute -bottom-8 -left-4 md:-left-10 w-36 md:w-44 h-28 md:h-32 rounded-xl overflow-hidden border-4 border-white shadow-xl">
-                <img src="https://placehold.co/300x220/dcb66d/2f2f2f?text=Detail" alt="Interior detail" loading="lazy"
-                    class="w-full h-full object-cover" />
+            <div class="absolute top-1/2 -translate-y-1/2">
+                     <img class="w-full h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-inner-img.png" alt="interior showcase">
             </div>
         </div>
     </div>
