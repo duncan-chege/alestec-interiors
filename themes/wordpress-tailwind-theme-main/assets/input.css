@@ -58,7 +58,7 @@ body {
   }
 
   .arrow-btn {
-    @apply w-10 h-10 md:w-11 md:h-11 rounded-full bg-white flex items-center justify-center shrink-0 transition hover:bg-cream;
+    @apply cursor-pointer w-12 h-8 md:w-12 md:h-8 rounded-full bg-white flex items-center justify-center shrink-0 transition hover:bg-cream;
   }
 
   .current-menu-item > a {
