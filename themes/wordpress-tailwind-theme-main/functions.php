@@ -68,7 +68,20 @@ function is_development()
     // Works with any localhost subdirectory:
     return strpos($host, 'localhost') !== false ||
         strpos($host, '.local') !== false ||
+        strpos($host, '.test') !== false ||
         strpos($host, '127.0.0.1') !== false;
+}
+
+// Static fallback menu used until a "Primary Menu" is assigned in wp-admin
+function alestec_default_menu()
+{
+    echo '<ul class="flex items-center gap-10 text-sm font-medium text-dark-grey uppercase tracking-wide">
+        <li><a href="' . esc_url(home_url('/')) . '" class="text-green border-b-2 border-green pb-1">Home</a></li>
+        <li><a href="#services" class="flex items-center gap-1 hover:text-green transition">Services
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a></li>
+        <li><a href="#contact" class="hover:text-green transition">Contact</a></li>
+    </ul>';
 }
 
 // Widget areas
