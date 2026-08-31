@@ -81,47 +81,28 @@
             A structured approach that takes your project from first idea to final handover, without compromise.
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 text-center">
             <div>
-                <svg class="w-11 h-11 mb-5" viewBox="0 0 48 48" fill="none">
-                    <rect x="6" y="6" width="26" height="26" rx="3" fill="#16513f" />
-                    <path d="M12 14h14M12 20h14M12 26h8" stroke="#fef8ec" stroke-width="2" stroke-linecap="round" />
-                    <rect x="26" y="26" width="16" height="6" rx="1.5" fill="#a86d33" transform="rotate(45 26 26)" />
-                </svg>
-                <h4 class="text-green mb-2">Design &amp; Space Planning</h4>
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/blueprint-icon.svg" alt="blueprint icon" class="w-20 h-20 mx-auto">
+                <h5 class="text-brown mt-3 mb-1">Design &amp; Space Planning</h5>
                 <p class="text-sm">Crafting layouts and concepts tailored to how you'll use the space.</p>
             </div>
 
             <div>
-                <svg class="w-11 h-11 mb-5" viewBox="0 0 48 48" fill="none">
-                    <rect x="10" y="6" width="24" height="34" rx="3" fill="#16513f" />
-                    <rect x="17" y="4" width="10" height="6" rx="2" fill="#a86d33" />
-                    <path d="M15 18l3 3 6-6M15 28l3 3 6-6" stroke="#fef8ec" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <h4 class="text-brown mb-2">Specialist Fit-Out</h4>
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/specialist-icon.svg" alt="specialist fit-out icon" class="w-20 h-20 mx-auto">
+                <h5 class="text-brown mt-3 mb-1">Specialist Fit-Out</h5>
                 <p class="text-sm">Expert finishing and installation work carried out to the highest standard.</p>
             </div>
 
             <div>
-                <svg class="w-11 h-11 mb-5" viewBox="0 0 48 48" fill="none">
-                    <rect x="8" y="8" width="22" height="12" rx="2" fill="#16513f" />
-                    <rect x="26" y="18" width="4" height="8" fill="#a86d33" />
-                    <path d="M28 26l10 10" stroke="#a86d33" stroke-width="4" stroke-linecap="round" />
-                    <rect x="33" y="31" width="8" height="4" rx="1" fill="#a86d33" transform="rotate(45 33 31)" />
-                </svg>
-                <h4 class="text-brown mb-2">Construction</h4>
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/construction-icon.svg" alt="construction icon" class="w-20 h-20 mx-auto">
+                <h5 class="text-brown mt-3 mb-1">Construction</h5>
                 <p class="text-sm">Building out the design with quality materials and skilled craftsmanship.</p>
             </div>
 
             <div>
-                <svg class="w-11 h-11 mb-5" viewBox="0 0 48 48" fill="none">
-                    <path d="M10 42V10" stroke="#16513f" stroke-width="4" stroke-linecap="round" />
-                    <path d="M10 12h28" stroke="#16513f" stroke-width="4" stroke-linecap="round" />
-                    <path d="M10 18l10-6" stroke="#16513f" stroke-width="3" stroke-linecap="round" />
-                    <path d="M34 12v6" stroke="#a86d33" stroke-width="3" stroke-linecap="round" />
-                    <rect x="6" y="42" width="14" height="4" rx="1" fill="#a86d33" />
-                </svg>
-                <h4 class="text-green mb-2">Project Management</h4>
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/proj-management-icon.svg" alt="project management icon" class="w-20 h-20 mx-auto">
+                <h5 class="text-brown mt-3 mb-1">Project Management</h5>
                 <p class="text-sm">Overseeing every phase to keep timelines, budgets, and quality on track.</p>
             </div>
         </div>
