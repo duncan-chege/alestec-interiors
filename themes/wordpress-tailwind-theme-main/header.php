@@ -33,7 +33,6 @@
                     'theme_location' => 'primary',
                     'menu_class' => 'flex items-center gap-10 text-sm font-medium text-dark-grey uppercase tracking-wide',
                     'container' => false,
-                    'fallback_cb' => 'alestec_default_menu',
                 ));
                 ?>
                 <a href="tel:+254712345678" class="text-sm font-semibold text-dark-grey whitespace-nowrap">
@@ -49,7 +48,6 @@
                 'theme_location' => 'primary',
                 'menu_class' => 'flex flex-col gap-4 py-4 px-4 text-sm font-medium text-dark-grey uppercase tracking-wide',
                 'container' => false,
-                'fallback_cb' => 'alestec_default_menu',
             ));
             ?>
             <a href="tel:+254712345678" class="block px-4 pb-4 text-sm font-semibold text-dark-grey">
