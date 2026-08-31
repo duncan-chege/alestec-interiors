@@ -14,13 +14,11 @@
             </p>
         </div>
 
-        <div class="relative">
-            <img src="https://placehold.co/800x640/e7e1d0/2f2f2f?text=Hero+Image" alt="Interior showcase" loading="eager"
-                class="w-full h-80 md:h-115 object-cover rounded-2xl" />
+        <div class="relative overflow-hidden">
+            <img class="w-full h-full object-cover relative left-30" src="<?php echo get_template_directory_uri();?>/assets/images/outer-hero-img.jpg" alt="interior showcase">
 
-            <div class="absolute left-2 md:-left-6 top-1/2 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-8 border-white shadow-xl">
-                <img src="https://placehold.co/300x300/dcb66d/2f2f2f?text=Detail" alt="Interior detail" loading="lazy"
-                    class="w-full h-full object-cover" />
+            <div class="absolute top-1/2 -translate-y-1/2">
+                <img class="w-full h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/inner-hero-img.png" alt="interior showcase">
             </div>
         </div>
     </div>
