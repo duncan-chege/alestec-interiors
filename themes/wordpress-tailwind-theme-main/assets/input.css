@@ -46,7 +46,7 @@ body {
 /* Custom component classes */
 @layer components {
   .container-custom {
-    @apply max-w-360 mx-auto px-4 md:px-20;
+    @apply max-w-360 mx-auto px-4 md:px-8;
   }
 
   .badge {
