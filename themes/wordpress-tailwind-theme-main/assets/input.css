@@ -2,12 +2,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-maroon: #a51f53;
-  --color-navy-blue: #0183d5;
-  --color-mustard: #ffc971;
-  --color-dark-grey: #232323;
-  --color-pink: #ffcade;
-  --color-light-blue: #b4d8ed;
+  --color-green: #16513f;
+  --color-mustard: #dcb66d;
+  --color-brown: #a86d33;
+  --color-cream: #fef8ec;
+  --color-dark-grey: #2f2f2f;
 }
 
 html {
@@ -15,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 @layer base {
@@ -46,15 +45,4 @@ body {
 
 /* Custom component classes */
 @layer components {
-  .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors;
-  }
-
-  .card {
-    @apply bg-white shadow-md rounded-lg p-6;
-  }
-}
-
-.current-menu-item > a {
-  @apply underline underline-offset-8 text-maroon;
 }
