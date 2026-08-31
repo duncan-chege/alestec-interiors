@@ -135,46 +135,41 @@
             </div>
         </div>
 
+        <?php
+        $services_query = new WP_Query(array(
+            'post_type'      => 'service',
+            'post_status'    => 'publish',
+            'posts_per_page' => -1,
+            'orderby'        => 'menu_order',
+            'order'          => 'ASC',
+        ));
+        ?>
+
         <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-            <div>
-                <div class="relative rounded-xl overflow-hidden aspect-4/5">
-                    <img src="https://placehold.co/600x750/e7e1d0/2f2f2f?text=Special+Fit-Outs" alt="Special fit-outs" loading="lazy"
-                        class="w-full h-full object-cover" />
-                    <button type="button" aria-label="View Special Fit-Outs" class="arrow-btn absolute bottom-3 right-3">
-                        <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
-                        </svg>
-                    </button>
-                </div>
-                <h3 class="text-white mt-4">Special Fit-Outs</h3>
-            </div>
-
-            <div>
-                <div class="relative rounded-xl overflow-hidden aspect-4/5">
-                    <img src="https://placehold.co/600x750/e7e1d0/2f2f2f?text=Construction+%26+Finishing" alt="Construction and finishing" loading="lazy"
-                        class="w-full h-full object-cover" />
-                    <button type="button" aria-label="View Construction and Finishing" class="arrow-btn absolute bottom-3 right-3">
-                        <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
-                        </svg>
-                    </button>
-                </div>
-                <h3 class="text-white mt-4">Construction &amp; Finishing</h3>
-            </div>
-
-            <div>
-                <div class="relative rounded-xl overflow-hidden aspect-4/5">
-                    <img src="https://placehold.co/600x750/e7e1d0/2f2f2f?text=Project+Management" alt="Project management" loading="lazy"
-                        class="w-full h-full object-cover" />
-                    <button type="button" aria-label="View Project Management" class="arrow-btn absolute bottom-3 right-3">
-                        <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
-                        </svg>
-                    </button>
-                </div>
-                <h3 class="text-white mt-4">Project Management</h3>
-            </div>
+            <?php while ($services_query->have_posts()) : $services_query->the_post(); ?>
+                <a href="<?php the_permalink(); ?>" class="group block">
+                    <div class="relative rounded-xl overflow-hidden h-90">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail('full', array(
+                                'class'   => 'w-full h-full object-cover',
+                                'alt'     => get_the_title(),
+                                'loading' => 'lazy',
+                            )); ?>
+                        <?php else : ?>
+                            <img src="https://placehold.co/600x750/e7e1d0/2f2f2f?text=<?php echo rawurlencode(get_the_title()); ?>"
+                                alt="<?php the_title_attribute(); ?>" loading="lazy" class="w-full h-full object-cover" />
+                        <?php endif; ?>
+                        <span aria-hidden="true" class="arrow-btn absolute bottom-3 right-3">
+                            <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="text-white mt-4 group-hover:text-mustard transition"><?php the_title(); ?></h3>
+                </a>
+            <?php endwhile; ?>
         </div>
+        <?php wp_reset_postdata(); ?>
     </div>
 </section>
 
