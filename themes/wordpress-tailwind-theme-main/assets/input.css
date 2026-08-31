@@ -45,4 +45,19 @@ body {
 
 /* Custom component classes */
 @layer components {
+  .container-custom {
+    @apply max-w-360 mx-auto px-4 md:px-20;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-widest;
+  }
+
+  .badge-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-brown shrink-0;
+  }
+
+  .arrow-btn {
+    @apply w-10 h-10 md:w-11 md:h-11 rounded-full bg-white flex items-center justify-center shrink-0 transition hover:bg-cream;
+  }
 }
