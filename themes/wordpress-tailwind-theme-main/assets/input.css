@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #a51f53;
+  --color-navy-blue: #0183d5;
+  --color-mustard: #ffc971;
+  --color-dark-grey: #232323;
+  --color-pink: #ffcade;
+  --color-light-blue: #b4d8ed;
+}
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply font-bold text-3xl lg:text-7xl leading-tight lg:leading-16 mb-4 lg:mb-8;
+  }
+
+  h2 {
+    @apply lg:text-3xl text-xl font-semibold leading-tight;
+  }
+
+  h3 {
+    @apply text-xl lg:text-2xl font-semibold leading-normal;
+  }
+
+  h4 {
+    @apply text-xl font-medium leading-normal;
+  }
+
+  h5 {
+    @apply font-bold text-lg tracking-widest;
+  }
+
+  p:not(footer p) {
+    @apply text-dark-grey;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors;
+  }
+
+  .card {
+    @apply bg-white shadow-md rounded-lg p-6;
+  }
+}
+
+.current-menu-item > a {
+  @apply underline underline-offset-8 text-maroon;
+}
