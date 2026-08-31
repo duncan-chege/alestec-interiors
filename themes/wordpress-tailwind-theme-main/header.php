@@ -11,11 +11,11 @@
     <?php wp_body_open(); ?>
 
     <header class="bg-white sticky top-0 z-50">
-        <nav class="container-custom flex items-center justify-between py-5">
+        <nav class="container-custom flex items-center gap-x-80 py-2">
             <!-- Logo/Site Title -->
             <div class="flex items-center">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="text-xl font-bold text-dark-grey">
-                    <?php bloginfo('name'); ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/alestec-logo.svg" alt="<?php bloginfo('name'); ?>" class="h-16">
                 </a>
             </div>
 
@@ -27,16 +27,16 @@
             </button>
 
             <!-- Desktop navigation -->
-            <div class="hidden md:flex items-center gap-10">
+            <div class="hidden md:flex items-center gap-14 flex-1">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
-                    'menu_class' => 'flex items-center gap-10 text-sm font-medium text-dark-grey uppercase tracking-wide',
+                    'menu_class' => 'flex items-center gap-14 text-sm font-medium text-dark-grey uppercase tracking-wide',
                     'container' => false,
                 ));
                 ?>
                 <a href="tel:+254712345678" class="text-sm font-semibold text-dark-grey whitespace-nowrap">
-                    Call Us: <span class="font-bold">+254712345678</span>
+                    Call Us: <span class="font-bold text-green">+254712345678</span>
                 </a>
             </div>
         </nav>
