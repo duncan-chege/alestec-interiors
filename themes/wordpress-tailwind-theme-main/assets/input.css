@@ -19,11 +19,11 @@ body {
 
 @layer base {
   h1 {
-    @apply font-bold text-3xl lg:text-7xl leading-tight lg:leading-16 mb-4 lg:mb-8;
+    @apply font-bold text-3xl lg:text-6xl leading-tight lg:leading-16 mb-4 lg:mb-8;
   }
 
   h2 {
-    @apply lg:text-3xl text-xl font-semibold leading-tight;
+    @apply lg:text-4xl text-xl font-semibold leading-tight;
   }
 
   h3 {
