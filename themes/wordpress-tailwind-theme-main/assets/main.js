@@ -13,6 +13,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Services carousel prev/next controls
+  const servicesTrack = document.getElementById("services-track");
+  const servicesPrev = document.getElementById("services-prev");
+  const servicesNext = document.getElementById("services-next");
+
+  if (servicesTrack && servicesPrev && servicesNext) {
+    const scrollByCard = (direction) => {
+      const card = servicesTrack.querySelector("a");
+      if (!card) return;
+
+      const gap = parseFloat(getComputedStyle(servicesTrack).columnGap) || 0;
+      const amount = card.getBoundingClientRect().width + gap;
+
+      servicesTrack.scrollBy({ left: direction * amount, behavior: "smooth" });
+    };
+
+    servicesPrev.addEventListener("click", () => scrollByCard(-1));
+    servicesNext.addEventListener("click", () => scrollByCard(1));
+  }
+
   // Lazy loading for images (if not using WordPress native lazy loading)
   if ("IntersectionObserver" in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
