@@ -15,10 +15,10 @@
         </div>
 
         <div class="relative overflow-hidden">
-            <img class="w-full h-full object-cover relative left-30" src="<?php echo get_template_directory_uri();?>/assets/images/outer-hero-img.jpg" alt="interior showcase">
+            <img class="w-full h-full object-cover relative lg:left-30 left-10" src="<?php echo get_template_directory_uri();?>/assets/images/outer-hero-img.jpg" alt="interior showcase">
 
             <div class="absolute top-1/2 -translate-y-1/2">
-                <img class="w-full h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/inner-hero-img.png" alt="interior showcase">
+                <img class="w-1/2 lg:w-full lg:h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/inner-hero-img.png" alt="interior showcase">
             </div>
         </div>
     </div>
@@ -56,12 +56,12 @@
 
         <div class="justify-self-start relative">
             <div class="relative">
-                <img class="w-full h-full object-cover relative left-10" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-outer-img.png" alt="interior showcase">
+                <img class="w-full h-full object-cover relative md:left-10" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-outer-img.png" alt="interior showcase">
             </div>
 
-            <div class="outline -outline-offset-10 outline-white absolute top-0 right-6 w-28 h-28 md:w-44 md:h-44 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl">
+            <div class="z-10 outline -outline-offset-10 outline-white absolute top-0 right-6 w-34 h-34 md:w-44 md:h-44 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl">
                 <span class="text-3xl md:text-6xl font-bold leading-none">10</span>
-                <span class="text-sm tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
+                <span class="text-xs md:text-sm tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
             </div>
 
             <div class="absolute top-1/2 -translate-y-1/2">
@@ -113,7 +113,7 @@
 <section id="services" class="relative bg-green py-16 md:py-24 overflow-hidden scroll-mt-20">
     <div class="absolute inset-0" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2760%27 height=%2760%27%3E%3Cpath d=%27M30 0 L60 30 L30 60 L0 30 Z%27 fill=%27none%27 stroke=%27rgba(255,255,255,0.08)%27 stroke-width=%271%27/%3E%3C/svg%3E');"></div>
 
-    <div class="relative ml-18">
+    <div class="relative ml-4 md:ml-18">
         <span class="badge border-cream/40 text-cream mb-6">
             <span class="badge-dot"></span> Our Services
         </span>
@@ -121,7 +121,7 @@
         <div class="flex items-end justify-between gap-6 mb-10 md:mb-14">
             <h2 class="text-white max-w-xl">Experience the art of interior design</h2>
 
-            <div class="hidden md:flex gap-3 mr-18">
+            <div class="hidden md:flex gap-3 mr-4 md:mr-18">
                 <button type="button" id="services-prev" aria-label="Previous" class="arrow-btn">
                     <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M5 12l6-6M5 12l6 6" />

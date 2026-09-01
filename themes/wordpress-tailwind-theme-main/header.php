@@ -11,10 +11,10 @@
     <?php wp_body_open(); ?>
 
     <header class="bg-white sticky top-0 z-50">
-        <nav class="container-custom flex items-center gap-x-80 py-2">
+        <nav class="container-custom flex items-center justify-between lg:gap-x-80 py-2">
             <!-- Logo/Site Title -->
             <div class="flex items-center">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="text-xl font-bold text-dark-grey">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/alestec-logo.svg" alt="<?php bloginfo('name'); ?>" class="h-16">
                 </a>
             </div>
@@ -27,11 +27,11 @@
             </button>
 
             <!-- Desktop navigation -->
-            <div class="hidden md:flex items-center gap-14 flex-1">
+            <div class="hidden md:flex items-center justify-end lg:justify-start gap-8 lg:gap-16 flex-1">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
-                    'menu_class' => 'flex items-center gap-14 text-sm font-medium text-dark-grey uppercase tracking-wide',
+                    'menu_class' => 'flex items-center gap-8 lg:gap-16 text-sm font-medium text-dark-grey uppercase tracking-wide',
                     'container' => false,
                 ));
                 ?>

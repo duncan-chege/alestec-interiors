@@ -1,5 +1,5 @@
 <footer class="bg-dark-grey text-white pt-14 md:pt-20 pb-8">
-    <div class="container-custom flex flex-col md:flex-row md:items-start gap-x-50 pb-10">
+    <div class="container-custom flex flex-col md:flex-row md:items-start gap-x-50 gap-y-10 pb-10">
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-alestec-logo.svg" alt="<?php bloginfo('name'); ?>" class="h-16">
            
