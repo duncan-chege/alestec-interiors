@@ -13,23 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Smooth scrolling for anchor links
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
-  anchorLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
-        e.preventDefault();
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    });
-  });
-
   // Lazy loading for images (if not using WordPress native lazy loading)
   if ("IntersectionObserver" in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
