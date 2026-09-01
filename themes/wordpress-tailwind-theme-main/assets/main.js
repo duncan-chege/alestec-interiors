@@ -1,16 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Mobile menu functionality
+  // Mobile menu functionality (off-canvas drawer)
   const mobileToggle = document.getElementById("mobile-menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
+  const mobileClose = document.getElementById("mobile-menu-close");
+  const mobileOverlay = document.getElementById("mobile-menu-overlay");
 
-  if (mobileToggle && mobileMenu) {
-    mobileToggle.addEventListener("click", function () {
-      mobileMenu.classList.toggle("hidden");
+  if (mobileToggle && mobileMenu && mobileOverlay) {
+    const openMobileMenu = () => {
+      mobileMenu.classList.remove("translate-x-full");
+      mobileOverlay.classList.remove("opacity-0", "invisible", "pointer-events-none");
+      mobileToggle.setAttribute("aria-expanded", "true");
+      document.body.classList.add("overflow-hidden");
+    };
 
-      // Toggle aria-expanded for accessibility
+    const closeMobileMenu = () => {
+      mobileMenu.classList.add("translate-x-full");
+      mobileOverlay.classList.add("opacity-0", "invisible", "pointer-events-none");
+      mobileToggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("overflow-hidden");
+    };
+
+    mobileToggle.addEventListener("click", () => {
       const isExpanded = mobileToggle.getAttribute("aria-expanded") === "true";
-      mobileToggle.setAttribute("aria-expanded", !isExpanded);
+      isExpanded ? closeMobileMenu() : openMobileMenu();
     });
+
+    mobileClose?.addEventListener("click", closeMobileMenu);
+    mobileOverlay.addEventListener("click", closeMobileMenu);
   }
 
   // Services carousel prev/next controls

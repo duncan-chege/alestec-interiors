@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Hero -->
-<section class="container-custom pb-16 md:pb-24">
+<section class="container-custom pt-6 pb-16 md:pb-24">
     <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div>
             <h1 class="text-dark-grey">From <span class="text-brown">Concept</span> to
@@ -121,7 +121,7 @@
         <div class="flex items-end justify-between gap-6 mb-10 md:mb-14">
             <h2 class="text-white max-w-xl">Experience the art of interior design</h2>
 
-            <div class="hidden md:flex gap-3 mr-4 md:mr-18">
+            <div class="flex gap-3 mr-4 md:mr-18">
                 <button type="button" id="services-prev" aria-label="Previous" class="arrow-btn">
                     <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M5 12l6-6M5 12l6 6" />

@@ -89,6 +89,6 @@ body {
   }
 
   .sub-menu a {
-    @apply block text-dark-grey md:px-4 md:py-2 md:hover:bg-cream md:hover:text-brown md:transition;
+    @apply block text-dark-grey md:px-4 md:py-2 py-1.5 md:hover:bg-cream md:hover:text-brown md:transition;
   }
 }

@@ -21,7 +21,7 @@
 
             <!-- Mobile menu button -->
             <button class="md:hidden p-2" id="mobile-menu-toggle" aria-expanded="false">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
@@ -41,8 +41,18 @@
             </div>
         </nav>
 
-        <!-- Mobile navigation -->
-        <div class="md:hidden hidden border-t border-gray-100" id="mobile-menu">
+        <!-- Mobile navigation backdrop -->
+        <div class="md:hidden fixed inset-0 bg-black/50 z-40 opacity-0 invisible pointer-events-none transition duration-300" id="mobile-menu-overlay"></div>
+
+        <!-- Mobile navigation drawer -->
+        <div class="md:hidden fixed top-0 right-0 h-full w-4/5 max-w-xs bg-white z-50 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto" id="mobile-menu">
+            <div class="flex items-center justify-between px-4 pt-4 border-b border-gray-100">
+                <button class="p-2" id="mobile-menu-close" aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
@@ -51,7 +61,7 @@
             ));
             ?>
             <a href="tel:+254712345678" class="block px-4 pb-4 text-sm font-semibold text-dark-grey">
-                Call Us: <span class="font-bold">+254712345678</span>
+                Call Us: <span class="font-bold text-green">+254712345678</span>
             </a>
         </div>
     </header>
