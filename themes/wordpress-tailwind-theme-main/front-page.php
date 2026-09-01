@@ -113,7 +113,7 @@
 <section id="services" class="relative bg-green py-16 md:py-24 overflow-hidden scroll-mt-20">
     <div class="absolute inset-0" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2760%27 height=%2760%27%3E%3Cpath d=%27M30 0 L60 30 L30 60 L0 30 Z%27 fill=%27none%27 stroke=%27rgba(255,255,255,0.08)%27 stroke-width=%271%27/%3E%3C/svg%3E');"></div>
 
-    <div class="relative container-custom">
+    <div class="relative ml-18">
         <span class="badge border-cream/40 text-cream mb-6">
             <span class="badge-dot"></span> Our Services
         </span>
@@ -121,7 +121,7 @@
         <div class="flex items-end justify-between gap-6 mb-10 md:mb-14">
             <h2 class="text-white max-w-xl">Experience the art of interior design</h2>
 
-            <div class="hidden md:flex gap-3">
+            <div class="hidden md:flex gap-3 mr-18">
                 <button type="button" id="services-prev" aria-label="Previous" class="arrow-btn">
                     <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M5 12l6-6M5 12l6 6" />
