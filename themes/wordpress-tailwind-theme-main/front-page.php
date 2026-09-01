@@ -110,7 +110,7 @@
 </section>
 
 <!-- Our Services -->
-<section id="services" class="relative bg-green py-16 md:py-24 overflow-hidden">
+<section id="services" class="relative bg-green py-16 md:py-24 overflow-hidden scroll-mt-20">
     <div class="absolute inset-0" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2760%27 height=%2760%27%3E%3Cpath d=%27M30 0 L60 30 L30 60 L0 30 Z%27 fill=%27none%27 stroke=%27rgba(255,255,255,0.08)%27 stroke-width=%271%27/%3E%3C/svg%3E');"></div>
 
     <div class="relative container-custom">
@@ -122,12 +122,12 @@
             <h2 class="text-white max-w-xl">Experience the art of interior design</h2>
 
             <div class="hidden md:flex gap-3">
-                <button type="button" aria-label="Previous" class="arrow-btn">
+                <button type="button" id="services-prev" aria-label="Previous" class="arrow-btn">
                     <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M5 12l6-6M5 12l6 6" />
                     </svg>
                 </button>
-                <button type="button" aria-label="Next" class="arrow-btn">
+                <button type="button" id="services-next" aria-label="Next" class="arrow-btn">
                     <svg class="w-4 h-4 text-dark-grey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" />
                     </svg>
@@ -138,16 +138,15 @@
         <?php
         $services_query = new WP_Query(array(
             'post_type'      => 'service',
-            'post_status'    => 'publish',
             'posts_per_page' => -1,
             'orderby'        => 'menu_order',
             'order'          => 'ASC',
         ));
         ?>
 
-        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div id="services-track" class="flex gap-10 md:gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none pb-2">
             <?php while ($services_query->have_posts()) : $services_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>" class="group block">
+                <a href="<?php the_permalink(); ?>" class="group block shrink-0 snap-start w-[85%] md:w-[28%]">
                     <div class="relative rounded-xl overflow-hidden h-90">
                         <?php if (has_post_thumbnail()) : ?>
                             <?php the_post_thumbnail('full', array(
