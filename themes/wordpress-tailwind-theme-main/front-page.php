@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Hero -->
-<section class="container-custom pt-10 md:pt-16 pb-16 md:pb-24">
+<section class="container-custom pb-16 md:pb-24">
     <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div>
             <h1 class="text-dark-grey">From <span class="text-brown">Concept</span> to

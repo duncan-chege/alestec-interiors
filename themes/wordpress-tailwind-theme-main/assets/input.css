@@ -56,12 +56,39 @@ body {
   .badge-dot {
     @apply w-1.5 h-1.5 rounded-full bg-brown shrink-0;
   }
+}
 
+@layer utilities {
   .arrow-btn {
     @apply cursor-pointer w-12 h-8 md:w-12 md:h-8 rounded-full bg-white flex items-center justify-center shrink-0 transition hover:bg-cream;
   }
 
   .current-menu-item > a {
     @apply text-green border-b-2 border-green pb-1;
+  }
+
+  .menu-item-has-children {
+    @apply md:relative;
+  }
+
+  .menu-item-has-children > a::after {
+    content: "";
+    @apply hidden md:inline-block w-1.5 h-1.5 ml-1.5 border-b-2 border-r-2 border-current rotate-45 align-middle -translate-y-0.5;
+  }
+
+  .sub-menu {
+    @apply mt-2 pl-4 space-y-2 normal-case tracking-normal font-normal
+      md:mt-0 md:pt-3 md:pl-0 md:space-y-0 md:absolute md:left-0 md:top-full md:min-w-52
+      md:rounded-xl md:bg-white md:shadow-xl md:pb-2 md:opacity-0 md:invisible
+      md:-translate-y-2 md:pointer-events-none md:transition md:duration-200 md:z-50;
+  }
+
+  .menu-item-has-children:hover > .sub-menu,
+  .menu-item-has-children:focus-within > .sub-menu {
+    @apply md:opacity-100 md:visible md:translate-y-0 md:pointer-events-auto;
+  }
+
+  .sub-menu a {
+    @apply block text-dark-grey md:px-4 md:py-2 md:hover:bg-cream md:hover:text-brown md:transition;
   }
 }
