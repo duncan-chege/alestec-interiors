@@ -47,7 +47,7 @@ function tailwind_theme_assets()
     }
 
     // Load main.js normally (not through Vite)
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/main.js', [], '1.0.0', true);
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/main.js', [], filemtime(get_template_directory() . '/assets/main.js'), true);
 }
 add_action('wp_enqueue_scripts', 'tailwind_theme_assets');
 
