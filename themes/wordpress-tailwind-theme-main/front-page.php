@@ -36,6 +36,7 @@
                 We provide our clients the luxury of having their projects handled from conceptualisation to
                 handover, delivered on time and to the utmost standard.
             </p>
+            
             <p class="mb-10">We serve corporations, large scale commercial clients and residences</p>
 
             <div class="flex flex-wrap gap-x-16 gap-y-6">

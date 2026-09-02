@@ -35,8 +35,8 @@
                     'container' => false,
                 ));
                 ?>
-                <a href="tel:+254712345678" class="text-sm font-semibold text-dark-grey whitespace-nowrap">
-                    Call Us: <span class="font-bold text-green">+254712345678</span>
+                <a href="tel:+254705212579" class="text-sm font-semibold text-dark-grey whitespace-nowrap">
+                    Call Us: <span class="font-bold text-green">+254705212579</span>
                 </a>
             </div>
         </nav>
@@ -60,8 +60,8 @@
                 'container' => false,
             ));
             ?>
-            <a href="tel:+254712345678" class="block px-4 pb-4 text-sm font-semibold text-dark-grey">
-                Call Us: <span class="font-bold text-green">+254712345678</span>
+            <a href="tel:+254705212579" class="block px-4 pb-4 text-sm font-semibold text-dark-grey">
+                Call Us: <span class="font-bold text-green">+254705212579</span>
             </a>
         </div>
     </header>
