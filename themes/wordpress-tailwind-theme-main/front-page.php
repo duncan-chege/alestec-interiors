@@ -15,9 +15,9 @@
         </div>
 
         <div class="relative overflow-hidden">
-            <img class="w-full h-full object-cover relative lg:left-30 left-10" src="<?php echo get_template_directory_uri();?>/assets/images/outer-hero-img.jpg" alt="interior showcase">
+            <img class="w-full h-full object-cover relative lg:left-30 left-10 animate-hero-outer" src="<?php echo get_template_directory_uri();?>/assets/images/outer-hero-img.jpg" alt="interior showcase">
 
-            <div class="absolute top-1/2 -translate-y-1/2">
+            <div class="absolute top-1/2 -translate-y-1/2 animate-hero-inner">
                 <img class="w-1/2 lg:w-full lg:h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/inner-hero-img.png" alt="interior showcase">
             </div>
         </div>

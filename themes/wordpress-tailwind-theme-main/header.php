@@ -56,7 +56,7 @@
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
-                'menu_class' => 'flex flex-col gap-4 py-4 px-4 text-sm font-medium text-dark-grey uppercase tracking-wide',
+                'menu_class' => 'flex flex-col gap-6 py-4 px-4 text-sm font-medium text-dark-grey uppercase tracking-wide',
                 'container' => false,
             ));
             ?>

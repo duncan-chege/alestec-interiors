@@ -7,6 +7,38 @@
   --color-brown: #a86d33;
   --color-cream: #fef8ec;
   --color-dark-grey: #2f2f2f;
+
+  --animate-hero-outer: hero-outer-in 2s ease-out forwards;
+  --animate-hero-inner: hero-inner-in 2s ease-out forwards;
+}
+
+@keyframes hero-outer-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-inner-in {
+  from {
+    translate: -100% -50%;
+    opacity: 0;
+  }
+  to {
+    translate: 0 -50%;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-outer,
+  .animate-hero-inner {
+    animation: none;
+  }
 }
 
 html {
