@@ -72,6 +72,18 @@ function is_development()
         strpos($host, '127.0.0.1') !== false;
 }
 
+// Mark the "Services" nav menu item active while viewing any service post,
+// since WordPress only auto-marks a parent active for items literally listed
+// as its children in the menu editor.
+function alestec_services_nav_active_class($classes, $item)
+{
+    if ((is_singular('service') || is_post_type_archive('service')) && $item->title === 'Services') {
+        $classes[] = 'current-menu-item';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'alestec_services_nav_active_class', 10, 2);
+
 // Widget areas
 function tailwind_theme_widgets_init()
 {
