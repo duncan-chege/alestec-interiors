@@ -49,6 +49,39 @@ document.addEventListener("DOMContentLoaded", function () {
     servicesNext.addEventListener("click", () => scrollByCard(1));
   }
 
+  // Play .reveal animations only once their containing .reveal-section scrolls into view.
+  // Watching the section (not the transformed .reveal elements themselves) keeps the
+  // intersection math stable — a .reveal element's own "paused" slide-offset can push
+  // most of its box outside the viewport, which would throw off a per-element threshold.
+  const revealSections = document.querySelectorAll(".reveal-section");
+
+  if (revealSections.length) {
+    const playReveals = (section) => {
+      section.querySelectorAll(".reveal").forEach((el) => {
+        el.style.animationPlayState = "running";
+      });
+    };
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              playReveals(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      revealSections.forEach((section) => revealObserver.observe(section));
+    } else {
+      // No IntersectionObserver support: just play immediately rather than staying stuck paused
+      revealSections.forEach(playReveals);
+    }
+  }
+
   // Lazy loading for images (if not using WordPress native lazy loading)
   if ("IntersectionObserver" in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {

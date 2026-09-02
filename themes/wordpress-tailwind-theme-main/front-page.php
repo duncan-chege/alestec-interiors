@@ -15,9 +15,9 @@
         </div>
 
         <div class="relative overflow-hidden">
-            <img class="w-full h-full object-cover relative lg:left-30 left-10 animate-hero-outer" src="<?php echo get_template_directory_uri();?>/assets/images/outer-hero-img.jpg" alt="interior showcase">
+            <img class="w-full h-full object-cover relative lg:left-30 left-10 animate-slide-right" src="<?php echo get_template_directory_uri();?>/assets/images/outer-hero-img.jpg" alt="interior showcase">
 
-            <div class="absolute top-1/2 -translate-y-1/2 animate-hero-inner">
+            <div class="absolute top-1/2 -translate-y-1/2 animate-slide-left-centered">
                 <img class="w-1/2 lg:w-full lg:h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/inner-hero-img.png" alt="interior showcase">
             </div>
         </div>
@@ -25,9 +25,9 @@
 </section>
 
 <!-- Who We Are -->
-<section class="container-custom py-8 md:py-16">
+<section class="container-custom py-8 md:py-16 reveal-section">
     <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-        <div>
+        <div class="animate-slide-left reveal">
             <span class="badge border-brown/40 text-brown mb-6">
                 <span class="badge-dot"></span> Who We Are
             </span>
@@ -59,12 +59,12 @@
                 <img class="w-full h-full object-cover relative md:left-10" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-outer-img.png" alt="interior showcase">
             </div>
 
-            <div class="z-10 outline -outline-offset-10 outline-white absolute top-0 right-6 w-34 h-34 md:w-44 md:h-44 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl">
+            <div class="z-10 outline -outline-offset-10 outline-white absolute top-0 right-6 w-34 h-34 md:w-44 md:h-44 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl animate-slide-right reveal">
                 <span class="text-3xl md:text-6xl font-bold leading-none">10</span>
                 <span class="text-xs md:text-sm tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
             </div>
 
-            <div class="absolute top-1/2 -translate-y-1/2">
+            <div class="absolute top-1/2 -translate-y-1/2 animate-slide-left-centered reveal">
                      <img class="w-full h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-inner-img.png" alt="interior showcase">
             </div>
         </div>

@@ -8,11 +8,13 @@
   --color-cream: #fef8ec;
   --color-dark-grey: #2f2f2f;
 
-  --animate-hero-outer: hero-outer-in 2s ease-out forwards;
-  --animate-hero-inner: hero-inner-in 2s ease-out forwards;
+  --animate-slide-right: slide-right-in 2s ease-out both;
+  --animate-slide-left: slide-left-in 2s ease-out both;
+  --animate-slide-left-centered: slide-left-in-centered 2s ease-out both;
 }
 
-@keyframes hero-outer-in {
+/* Plain transform slide-ins, for elements with no other active transform utility */
+@keyframes slide-right-in {
   from {
     transform: translateX(100%);
     opacity: 0;
@@ -23,7 +25,20 @@
   }
 }
 
-@keyframes hero-inner-in {
+@keyframes slide-left-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animates the native `translate` property (not transform) so it composes
+   with an existing -translate-y-1/2 vertical-centering utility on the same element */
+@keyframes slide-left-in-centered {
   from {
     translate: -100% -50%;
     opacity: 0;
@@ -35,8 +50,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-hero-outer,
-  .animate-hero-inner {
+  .animate-slide-right,
+  .animate-slide-left,
+  .animate-slide-left-centered {
     animation: none;
   }
 }
@@ -91,6 +107,12 @@ body {
 }
 
 @layer utilities {
+  /* Pairs with an animate-slide-* class: holds the animation paused at its
+     "from" frame until JS (IntersectionObserver in main.js) starts it on scroll into view */
+  .reveal {
+    animation-play-state: paused;
+  }
+
   .arrow-btn {
     @apply cursor-pointer w-12 h-8 md:w-12 md:h-8 rounded-full bg-white flex items-center justify-center shrink-0 transition hover:bg-cream;
   }
