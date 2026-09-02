@@ -11,7 +11,7 @@
     <?php wp_body_open(); ?>
 
     <header class="bg-white sticky top-0 z-50">
-        <nav class="container-custom flex items-center justify-between lg:gap-x-80 py-2">
+        <nav class="container-custom flex items-center md:justify-between xl:justify-start xl:gap-x-80 py-2">
             <!-- Logo/Site Title -->
             <div class="flex items-center">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="">
@@ -27,7 +27,7 @@
             </button>
 
             <!-- Desktop navigation -->
-            <div class="hidden md:flex items-center justify-end lg:justify-start gap-8 lg:gap-16 flex-1">
+            <div class="hidden md:flex gap-8 lg:gap-16">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
