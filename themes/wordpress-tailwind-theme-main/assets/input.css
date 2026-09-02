@@ -145,4 +145,16 @@ body {
   .sub-menu a {
     @apply block text-dark-grey md:px-4 md:py-2 py-1.5 md:hover:bg-cream md:hover:text-brown md:transition;
   }
+
+  .single p, .single h3 {
+    margin-bottom: 1.2rem;
+  }
+
+  .single .service-content img {
+    @apply border-4 border-green
+  }
+
+  .single .service-content a {
+    @apply text-green font-bold underline underline-offset-2;
+  }
 }
