@@ -33,7 +33,7 @@
             </span>
             <h2 class="text-dark-grey mb-4">Welcome To Alestec Interiors</h2>
             <p class="mb-4">
-                We provide our clients the luxury of having their projects handled from conceptualisation to
+                We provide our clients the expertise of having their projects handled from conceptualisation to
                 handover, delivered on time and to the utmost standard.
             </p>
             
