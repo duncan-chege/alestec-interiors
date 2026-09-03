@@ -71,7 +71,7 @@ body {
   }
 
   h2 {
-    @apply lg:text-4xl text-xl font-semibold leading-tight;
+    @apply lg:text-4xl text-2xl font-semibold leading-tight;
   }
 
   h3 {
@@ -118,7 +118,7 @@ body {
   }
 
   .current-menu-item > a {
-    @apply text-green border-b-2 border-green pb-1;
+    @apply text-green border-b-2 border-green pb-1 w-fit;
   }
 
   .menu-item-has-children {
