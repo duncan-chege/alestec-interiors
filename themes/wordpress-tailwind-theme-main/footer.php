@@ -18,7 +18,7 @@
             <h5 class="text-white mb-3 underline underline-offset-6">Contact Us</h5>
             <p class="font-light">Nairobi, Kenya</p>
             <p class="font-light">0705212579</p>
-            <p class="font-light">info@alestec.co.ke</p>
+            <p class="font-light">info@alestecinteriors.co.ke</p>
         </div>
     </div>
 

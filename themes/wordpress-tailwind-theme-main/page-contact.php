@@ -17,7 +17,7 @@
             <div class="space-y-2">
                 <h4 class="font-bold">Contact Us</h4>
                 <p>Call Us: <a href="tel:0705212579" class="font-bold text-green">0705212579</a></p>
-                <p>Email: <a href="mailto:alestec@mail.com" class="font-bold text-green">alestec@mail.com</a></p>
+                <p>Email: <a href="mailto:info@alestecinteriors.co.ke" class="font-bold text-green">info@alestecinteriors.co.ke</a></p>
             </div>
         </div>
 
