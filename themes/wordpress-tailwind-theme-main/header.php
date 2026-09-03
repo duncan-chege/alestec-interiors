@@ -31,13 +31,22 @@
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
-                    'menu_class' => 'flex items-center gap-8 lg:gap-16 text-sm font-medium text-dark-grey uppercase tracking-wide',
+                    'menu_class' => 'flex items-center gap-8 lg:gap-18 text-sm font-medium text-dark-grey uppercase tracking-wide',
                     'container' => false,
                 ));
                 ?>
                 <a href="tel:+254705212579" class="text-sm font-semibold text-dark-grey whitespace-nowrap">
                     Call Us: <span class="font-bold text-green">+254705212579</span>
                 </a>
+
+                <div class="flex items-center gap-6">
+                    <a target="_blank" href="#" aria-label="TikTok">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-tiktok-logo.svg" alt="TikTok" class="w-5 h-5">
+                    </a>
+                    <a target="_blank" href="#" aria-label="Instagram">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-instagram-logo.svg" alt="Instagram" class="w-5 h-5">
+                    </a>
+                </div>
             </div>
         </nav>
 
@@ -53,6 +62,16 @@
                     </svg>
                 </button>
             </div>
+
+            <div class="flex items-center gap-8 px-4 py-4">
+                <a target="_blank" href="#" aria-label="TikTok">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-tiktok-logo.svg" alt="TikTok" class="w-5 h-5">
+                </a>
+                <a target="_blank" href="#" aria-label="Instagram">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-instagram-logo.svg" alt="Instagram" class="w-5 h-5">
+                </a>
+            </div>
+
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
