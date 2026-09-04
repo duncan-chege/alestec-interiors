@@ -65,7 +65,7 @@
                 <span class="text-xs md:text-sm tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
             </div>
 
-            <div class="absolute top-1/2 -translate-y-1/2 animate-slide-left-centered reveal">
+            <div class="absolute top-3/4 -translate-y-1/2 animate-slide-left-centered reveal">
                      <img class="w-full h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-inner-img.png" alt="interior showcase">
             </div>
         </div>
