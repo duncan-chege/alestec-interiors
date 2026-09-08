@@ -60,13 +60,13 @@
                 <img class="w-full h-full object-cover relative md:left-10" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-outer-img.png" alt="interior showcase">
             </div>
 
-            <div class="z-10 outline -outline-offset-10 outline-white absolute top-0 right-6 w-34 h-34 md:w-44 md:h-44 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl animate-slide-right reveal">
-                <span class="text-3xl md:text-6xl font-bold leading-none">10</span>
-                <span class="text-xs md:text-sm tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
+            <div class="z-10 outline -outline-offset-10 outline-white absolute bottom-0 -right-10 w-34 h-34 lg:w-44 lg:h-44 rounded-full bg-brown text-cream flex flex-col items-center justify-center text-center shadow-xl animate-slide-right reveal">
+                <span class="text-3xl lg:text-6xl font-bold leading-none">10</span>
+                <span class="text-xs lg:text-sm tracking-wide leading-tight mt-1">YEARS OF<br>EXPERIENCE</span>
             </div>
 
             <div class="absolute top-[80%] -translate-y-1/2 animate-slide-left-centered reveal">
-                     <img class="w-2/3 lg:w-full lg:h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-inner-img.png" alt="interior showcase">
+                     <img class="w-2/3 xl:w-full lg:h-full object-cover" src="<?php echo get_template_directory_uri();?>/assets/images/welcome-inner-img.png" alt="interior showcase">
             </div>
         </div>
     </div>

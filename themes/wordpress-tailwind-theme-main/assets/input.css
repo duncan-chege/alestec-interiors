@@ -16,7 +16,7 @@
 /* Plain transform slide-ins, for elements with no other active transform utility */
 @keyframes slide-right-in {
   from {
-    transform: translateX(100%);
+    transform: translateX(50%);
     opacity: 0;
   }
   to {
