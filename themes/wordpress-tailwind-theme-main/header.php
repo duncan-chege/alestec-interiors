@@ -40,11 +40,14 @@
                 </a>
 
                 <div class="flex items-center gap-6">
-                    <a target="_blank" href="#" aria-label="TikTok">
+                    <a target="_blank" href="https://www.tiktok.com/@alestecinteriors" aria-label="TikTok">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-tiktok-logo.svg" alt="TikTok" class="w-5 h-5">
                     </a>
-                    <a target="_blank" href="#" aria-label="Instagram">
+                    <a target="_blank" href="https://www.instagram.com/alestec.interiors" aria-label="Instagram">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-instagram-logo.svg" alt="Instagram" class="w-5 h-5">
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/people/AlestecInteriors/61594450731132" aria-label="Facebook">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-facebook-logo.svg" alt="Facebook" class="w-5 h-5">
                     </a>
                 </div>
             </div>
@@ -64,11 +67,14 @@
             </div>
 
             <div class="flex items-center gap-8 px-4 py-4">
-                <a target="_blank" href="#" aria-label="TikTok">
+                <a target="_blank" href="https://www.tiktok.com/@alestecinteriors" aria-label="TikTok">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-tiktok-logo.svg" alt="TikTok" class="w-5 h-5">
                 </a>
-                <a target="_blank" href="#" aria-label="Instagram">
+                <a target="_blank" href="https://www.instagram.com/alestec.interiors" aria-label="Instagram">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-instagram-logo.svg" alt="Instagram" class="w-5 h-5">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/people/AlestecInteriors/61594450731132" aria-label="Facebook">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-facebook-logo.svg" alt="Facebook" class="w-5 h-5">
                 </a>
             </div>
 
