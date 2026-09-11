@@ -5,13 +5,13 @@
            
 
             <div class="flex gap-6 mt-8">
-                <a href="https://www.tiktok.com/@alestecinteriors" aria-label="TikTok">
+                <a target="_blank" href="https://www.tiktok.com/@alestecinteriors" aria-label="TikTok">
                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tiktok-logo.svg" alt="TikTok" class="w-6 h-6">   
                 </a>
-                <a href="https://www.instagram.com/alestec.interiors" aria-label="Instagram">
+                <a target="_blank" href="https://www.instagram.com/alestec.interiors" aria-label="Instagram">
                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-logo.svg" alt="Instagram" class="w-6 h-6">
                 </a>
-                <a href="https://www.facebook.com/people/AlestecInteriors/61594450731132" aria-label="Facebook">
+                <a target="_blank" href="https://www.facebook.com/people/AlestecInteriors/61594450731132" aria-label="Facebook">
                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook-logo.svg" alt="Facebook" class="w-6 h-6">
                 </a>
             </div>
